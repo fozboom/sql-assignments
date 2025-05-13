@@ -8,26 +8,26 @@ with first_place_letters as (select distinct substr("Code", 1, 1) as letter
      all_letters as (select chr(ascii('A') + i) as letter
                      from generate_series(0, 25) as i)
 
-SELECT 'First position' AS position,
+select 'First position' AS position,
        letter
-FROM all_letters
-WHERE letter NOT IN (SELECT letter FROM first_place_letters)
+from all_letters
+where letter not in (select letter from first_place_letters)
 
-UNION ALL
+union all
 
-SELECT 'Second position' AS position,
+select 'Second position' AS position,
        letter
-FROM all_letters
-WHERE letter NOT IN (SELECT letter FROM second_place_letters)
+from all_letters
+where letter not in (select letter from second_place_letters)
 
-UNION ALL
+union all
 
-SELECT 'Third position' AS position,
+select 'Third position' AS position,
        letter
-FROM all_letters
-WHERE letter NOT IN (SELECT letter FROM third_place_letters)
+from all_letters
+where letter not in (select letter from third_place_letters)
 
-ORDER BY position, letter;
+order by position, letter;
 
 
 
