@@ -170,3 +170,19 @@ covered recursive queries in out practice sessions, so feel free to look this up
 DBMS documentation and/or ask an LLM about it.
 
 [Solution](./task-7.sql)
+
+### Task 8
+
+Database: AdventureWorks
+
+Task description:
+
+1) Investigate if and how vendor's CreditRating correlates with the total monetary
+amount of transactions (see PurchaseOrders) with that vendor.
+Deliverables:
+2) One-two paragraph analysis with related SQL queries included
+
+- Analysis of data reveals no significant correlation between vendor credit ratings and transaction volumes. The Pearson correlation coefficient is only 0.0269, indicating virtually no relationship between these metrics. This contradicts the hypothesis that the company prefers to conduct larger volumes of business with higher-rated vendors.
+- Counterintuitively, vendors with the lowest credit rating (1) represent 80% of all vendors (84 out of 104) and generate the highest aggregate transaction volume ($54.5M out of $67.1M total). While vendors with better ratings (4-5) show higher average transaction volumes per vendor ($1.3M and $1.0M respectively), they are critically underrepresented (only 2 vendors each). Top-performing vendors exist across all rating groups with comparable transaction volumes ($2-5M), confirming that business decisions are driven by factors other than creditworthiness, such as product quality, delivery reliability, or specialization rather than financial stability.
+
+[Queries](./task-8.sql)
