@@ -10,7 +10,7 @@ country code in the Country table;
 2) same for letter not appearing in the second place; 
 3) same for the third place.
 
-[Solution](./task-1.sql)
+[Solution](../sql/task-1.sql)
 
 #### Answer:
 1) X
@@ -32,7 +32,7 @@ for this query has two columns "Metric" and "Value" and contains exactly three l
 with maximum, minimum and median values in the "Value" column, and the metic
 names (i.e. literally 'Minimum', 'Maximum' and 'Median') in the "Metric" column.
 
-[Solution](./task-2.sql)
+[Solution](../sql/task-2.sql)
 
 #### Answer:
 1) | Name | population\_per\_square\_mile |
@@ -63,7 +63,7 @@ Task description:
 1) For each country determine the percentage of its population living in its capital.
 Which 10 countries have this percentage being the smallest?
 
-[Solution](./task-3.sql)
+[Solution](../sql/task-3.sql)
 
 #### Answer:
 | ctr\_name | city\_name | population\_pct |
@@ -93,7 +93,7 @@ where this language is spoken.
 language? Challenge yourself by coming up with the solution that is as accurate as 
 possible given the data available in the database. 
 
-[Solution](./task-4.sql)
+[Solution](../sql/task-4.sql)
 
 #### Answer:
 
@@ -112,7 +112,7 @@ Task description:
 1) How many people were employed in each department on May 01, 1999?
 Use employeedepartmenthistory table StartDate and EndDate.
 
-[Solution](./task-5.sql)
+[Solution](../sql/task-5.sql)
 
 #### Answer:
 
@@ -145,7 +145,7 @@ Task description:
 subquerying, or anything else if needed.
 
 
-[Solution](./task-6.sql)
+[Solution](../sql/task-6.sql)
 
 #### Answer:
 2004-03-08
@@ -169,7 +169,7 @@ result set, but you can also think on how to deduplicate that. Note that we have
 covered recursive queries in out practice sessions, so feel free to look this up in the
 DBMS documentation and/or ask an LLM about it.
 
-[Solution](./task-7.sql)
+[Solution](../sql/task-7.sql)
 
 ### Task 8
 
@@ -185,7 +185,7 @@ Deliverables:
 - Analysis of data reveals no significant correlation between vendor credit ratings and transaction volumes. The Pearson correlation coefficient is only 0.0269, indicating virtually no relationship between these metrics. This contradicts the hypothesis that the company prefers to conduct larger volumes of business with higher-rated vendors.
 - Counterintuitively, vendors with the lowest credit rating (1) represent 80% of all vendors (84 out of 104) and generate the highest aggregate transaction volume ($54.5M out of $67.1M total). While vendors with better ratings (4-5) show higher average transaction volumes per vendor ($1.3M and $1.0M respectively), they are critically underrepresented (only 2 vendors each). Top-performing vendors exist across all rating groups with comparable transaction volumes ($2-5M), confirming that business decisions are driven by factors other than creditworthiness, such as product quality, delivery reliability, or specialization rather than financial stability.
 
-[Queries](./task-8.sql)
+[Queries](../sql/task-8.sql)
 
 
 ### Task 9
@@ -201,4 +201,4 @@ status.
 - Analysis of employee data reveals significant gender-based pay disparities and weak age correlation with compensation. Female employees earn on average 8.3% more than their male counterparts ($19.23 vs $17.76), with the most pronounced differences among single employees. Age shows only minimal correlation with pay rates, suggesting that compensation is driven more by role-specific factors than tenure or experience.
 - Gender emerges as the strongest predictor of compensation, with single women earning the highest average rates ($21.43) compared to all other demographic groups. Marital status creates interesting dynamics - single employees of both genders out-earn their married counterparts, but the gap is more pronounced among women (21% difference) than men (4% difference). Age demonstrates weak positive correlation with salary for both genders (0.20 for women, 0.13 for men), with employees over 50 earning substantially more than the 41-50 age group, indicating possible senior role premiums rather than pure age-based progression.
 
-[Queries](./task-9.sql)
+[Queries](../sql/task-9.sql)
