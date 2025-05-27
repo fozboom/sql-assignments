@@ -155,3 +155,18 @@ subquerying, or anything else if needed.
 | 2001-07-01 00:00:00.000000 | null |
 | 2004-03-08 00:00:00.000000 | 0.02180000000000004 |
 
+### Task 7
+
+Database: AdventureWorks
+
+Task description:
+
+1) Use an LLM to craft a recursive query (or recursive CTE) over the employee table to
+obtain a table storing subordination chains. A subordination chain is a string like "A
+-> B -> C -> …" where A,B,C etc are IDs of employees, A is a manager of B, B is a
+manager of C and so on. It is fine if for every chain its subchains are also in the
+result set, but you can also think on how to deduplicate that. Note that we have not
+covered recursive queries in out practice sessions, so feel free to look this up in the
+DBMS documentation and/or ask an LLM about it.
+
+[Solution](./task-7.sql)
