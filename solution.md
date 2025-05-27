@@ -1,6 +1,9 @@
 # Solution for the DB homework 
 
 ## Task 1 
+
+Database: world
+
 Task description:
 1) determine which Latin letter does NOT appear in the first place of the three-letter
 country code in the Country table; 
@@ -16,6 +19,10 @@ country code in the Country table;
 
 
 ## Task 2
+
+Database: world
+
+
 Task description:
 1) determine the ratio of population per square mile for each country;
 2) using CTE (common table expression) and the result of the previous step, determine
@@ -48,6 +55,9 @@ names (i.e. literally 'Minimum', 'Maximum' and 'Median') in the "Metric" column.
 
 ### Task 3
 
+Database: world
+
+
 Task description:
 
 1) For each country determine the percentage of its population living in its capital.
@@ -70,6 +80,9 @@ Which 10 countries have this percentage being the smallest?
 | Canada                                               | Ottawa                              | 1.076434327543583652 |
 
 ### Task 4 
+
+Database: world
+
 
 Task description: 
 
@@ -120,3 +133,5 @@ Use employeedepartmenthistory table StartDate and EndDate.
 | Information Services | 10 |
 | Finance | 11 |
 | Production | 149 |
+
+
