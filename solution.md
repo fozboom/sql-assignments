@@ -49,6 +49,7 @@ names (i.e. literally 'Minimum', 'Maximum' and 'Median') in the "Metric" column.
 ### Task 3
 
 Task description:
+
 1) For each country determine the percentage of its population living in its capital.
 Which 10 countries have this percentage being the smallest?
 
@@ -71,6 +72,7 @@ Which 10 countries have this percentage being the smallest?
 ### Task 4 
 
 Task description: 
+
 1) Determine the average life epectancy for each language in a simple (and not really a 
 correct) way: for each language just average out the life expectancy of all countries 
 where this language is spoken. 
@@ -87,3 +89,34 @@ The better approach uses weighted averaging because:
 - Language percentage matters - If only 10% of a country speaks English vs 90%, this affects the calculation
 
 Better formula: Weight each country's life expectancy by how many people actually speak that language there.
+
+### Task 5
+
+Database: AdventureWorks
+
+Task description:
+
+1) How many people were employed in each department on May 01, 1999?
+Use employeedepartmenthistory table StartDate and EndDate.
+
+[Solution](./task-5.sql)
+
+#### Answer:
+
+| Name | emp\_count |
+| :--- | :--- |
+| Executive | 1 |
+| Facilities and Maintenance | 1 |
+| Tool Design | 1 |
+| Purchasing | 3 |
+| Research and Development | 3 |
+| Marketing | 5 |
+| Production Control | 5 |
+| Document Control | 5 |
+| Engineering | 5 |
+| Quality Assurance | 5 |
+| Human Resources | 6 |
+| Shipping and Receiving | 6 |
+| Information Services | 10 |
+| Finance | 11 |
+| Production | 149 |
