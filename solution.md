@@ -135,3 +135,23 @@ Use employeedepartmenthistory table StartDate and EndDate.
 | Production | 149 |
 
 
+### Task 6
+Database: AdventureWorks
+
+Task description:
+
+1) At what date have the USD<->CAD exchanged rate has changed the most
+(compared to the previous day)? Use currencyrate table only. You can use the lag window function, CTE and
+subquerying, or anything else if needed.
+
+
+[Solution](./task-6.sql)
+
+#### Answer:
+2004-03-08
+
+| CurrencyRateDate | rate\_change |
+| :--- | :--- |
+| 2001-07-01 00:00:00.000000 | null |
+| 2004-03-08 00:00:00.000000 | 0.02180000000000004 |
+
