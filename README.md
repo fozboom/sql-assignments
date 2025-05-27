@@ -2,7 +2,7 @@
 
 ## Structure
 
-- [`sql/task-*.sql`](./sql/task-*.sql) - SQL queries for each assignment
+- [`sql/task-*.sql`](./sql/) - SQL queries for each assignment
 - [`docs/solution.md`](./docs/solution.md) - solutions and results
 - [`postgres/docker-world-pg/`](./postgres/docker-world-pg/docker-compose.yml) - Docker Compose for World database
 - [`postgres/docker-aw-pg/`](./postgres/docker-aw-pg/docker-compose.yml) - Docker Compose for AdventureWorks database
