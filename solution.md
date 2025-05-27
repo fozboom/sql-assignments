@@ -186,3 +186,19 @@ Deliverables:
 - Counterintuitively, vendors with the lowest credit rating (1) represent 80% of all vendors (84 out of 104) and generate the highest aggregate transaction volume ($54.5M out of $67.1M total). While vendors with better ratings (4-5) show higher average transaction volumes per vendor ($1.3M and $1.0M respectively), they are critically underrepresented (only 2 vendors each). Top-performing vendors exist across all rating groups with comparable transaction volumes ($2-5M), confirming that business decisions are driven by factors other than creditworthiness, such as product quality, delivery reliability, or specialization rather than financial stability.
 
 [Queries](./task-8.sql)
+
+
+### Task 9
+
+Database: AdventureWorks
+
+Task description:
+
+1) Investigate if and how employee's pay rate correlates with age, gender and marital
+status.
+
+
+- Analysis of employee data reveals significant gender-based pay disparities and weak age correlation with compensation. Female employees earn on average 8.3% more than their male counterparts ($19.23 vs $17.76), with the most pronounced differences among single employees. Age shows only minimal correlation with pay rates, suggesting that compensation is driven more by role-specific factors than tenure or experience.
+- Gender emerges as the strongest predictor of compensation, with single women earning the highest average rates ($21.43) compared to all other demographic groups. Marital status creates interesting dynamics - single employees of both genders out-earn their married counterparts, but the gap is more pronounced among women (21% difference) than men (4% difference). Age demonstrates weak positive correlation with salary for both genders (0.20 for women, 0.13 for men), with employees over 50 earning substantially more than the 41-50 age group, indicating possible senior role premiums rather than pure age-based progression.
+
+[Queries](./task-9.sql)
