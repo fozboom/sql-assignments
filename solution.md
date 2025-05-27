@@ -26,6 +26,7 @@ with maximum, minimum and median values in the "Value" column, and the metic
 names (i.e. literally 'Minimum', 'Maximum' and 'Median') in the "Metric" column.
 
 [Solution](./task-2.sql)
+
 #### Answer:
 1) | Name | population\_per\_square\_mile |
    | :--- | :--- |
@@ -45,3 +46,44 @@ names (i.e. literally 'Minimum', 'Maximum' and 'Median') in the "Metric" column.
    | Median | 67.45552799325566 |
    | Minimum | 0 |
 
+### Task 3
+
+Task description:
+1) For each country determine the percentage of its population living in its capital.
+Which 10 countries have this percentage being the smallest?
+
+[Solution](./task-3.sql)
+
+#### Answer:
+| ctr\_name | city\_name | population\_pct |
+| :--- | :--- | :--- |
+| India                                                | New Delhi                           | 0.029723615958771267 |
+| United States                                        | Washington                          | 0.205512704907726409 |
+| Nigeria                                              | Abuja                               | 0.31397413592093699 |
+| Pakistan                                             | Islamabad                           | 0.335180179316603081 |
+| Tanzania                                             | Dodoma                              | 0.56389294984634663 |
+| China                                                | Peking                              | 0.584865814311365903 |
+| Guam                                                 | Agaña                               | 0.677976190476190476 |
+| Côte d'Ivoire                                        | Yamoussoukro                        | 0.879210063573650751 |
+| Bhutan                                               | Thimphu                             | 1.035781544256120527 |
+| Canada                                               | Ottawa                              | 1.076434327543583652 |
+
+### Task 4 
+
+Task description: 
+1) Determine the average life epectancy for each language in a simple (and not really a 
+correct) way: for each language just average out the life expectancy of all countries 
+where this language is spoken. 
+2) What would be a more correct way to compute average life expectancies per 
+language? Challenge yourself by coming up with the solution that is as accurate as 
+possible given the data available in the database. 
+
+[Solution](./task-4.sql)
+
+#### Answer:
+
+The better approach uses weighted averaging because:
+- Population matters - A country with 100 million English speakers should count more than a country with 1 million speakers
+- Language percentage matters - If only 10% of a country speaks English vs 90%, this affects the calculation
+
+Better formula: Weight each country's life expectancy by how many people actually speak that language there.
